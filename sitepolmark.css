@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    margin: 5px;
+}
+
+.emblema{
+   
+    background: rgb(255, 187, 0);
+    padding-top: 10px;
+    
+}
+ .logo{
+        position: absolute;
+        background: white;
+        height: 110px;
+        width: 110px;
+        border-radius: 8px;
+        top: 10px;
+        left: 10px;
+        box-shadow: inset 0 0 0 3px rgb(158, 6, 6);
+        
+    }
+.btns{
+    text-align: right;
+    margin-top: 20px;
+    padding: 25px;
+    
+}
+.btns1{
+    text-align: center;
+    margin-top: 20px;
+    padding: 25px;
+}
+
+.efeito1 {
+    background: rgb(158, 6, 6);
+    color: white;
+    border: none;
+    color: white;
+    padding: 13px;
+    margin: 10px;
+    font-size: 13px;
+    line-height: 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+    right: 35px;
+}
+.efeito1:hover {
+    background: rgba(0, 0, 0, 0);
+    color: rgb(158, 6, 6);
+    box-shadow: inset 0 0 0 3px rgb(158, 6, 6); 
+ }
+.efeito2 {
+    background: rgb(158, 6, 6);
+    color: white;
+    
+    border: none;
+    color: white;
+    padding: 13px;
+    margin: 10px;
+    font-size: 13px;
+    line-height: 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+    right: 35px;
+}
+ .ofertas {
+    position: relative;
+    top: 20px;
+    text-align: center;
+ }
+ .folhetos{
+    text-align: center;
+ }
+ .folhetolj1-1{
+    position: absolute;
+    top: 320px;
+    left: 158px;
+ }
+ .folhetolj1-2{
+    position: absolute;
+    top: 0px;
+    left: 525px;
+ }
+.btns2{
+    text-align: center;
+    margin-top: 150px;
+}
