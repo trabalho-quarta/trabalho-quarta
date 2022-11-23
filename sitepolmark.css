@@ -1,37 +1,38 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-img{
+img {
     margin: 5px;
 }
 
-.emblema{
-
+/* começo do menu */
+.emblema {
     background: rgba(0, 0, 167, 0.985);
     padding-top: 10px;
     border-bottom: solid 3px rgb(255, 187, 0);
 }
- .logo{
-        position: absolute;
-        background: white;
-        height: 110px;
-        width: 110px;
-        border-radius: 8px;
-        top: 10px;
-        left: 10px;
-        box-shadow: inset 0 0 0 3px rgb(255, 187, 0);
 
-       
-    }
-.btns{
+.logo {
+    position: absolute;
+    background: white;
+    height: 110px;
+    width: 110px;
+    border-radius: 8px;
+    top: 10px;
+    left: 10px;
+    box-shadow: inset 0 0 0 3px rgb(255, 187, 0);
+}
+
+.btns {
     text-align: right;
     margin-top: 20px;
     padding: 25px;
-    
+
 }
-.btns1{
+
+.btns1 {
     text-align: center;
     margin-top: 20px;
     padding: 25px;
@@ -52,10 +53,30 @@ img{
     transition: all 400ms ease;
     right: 35px;
 }
+
 .efeito1:hover {
     background: rgba(0, 0, 0, 0);
     color: white;
-    box-shadow: inset 0 0 0 3px rgb(255, 187, 0); 
+    box-shadow: inset 0 0 0 3px rgb(255, 187, 0);
     font-weight: bold;
- }
+}
 
+/* Final do menu */
+
+.inicio {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    border-left: solid 1px gray;
+}
+
+.inicio1{
+    background-color: rgb(255, 187, 0);
+    margin: auto;
+    display: flex;
+    margin-top: 2px;
+    
+}
