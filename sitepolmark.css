@@ -3,8 +3,13 @@
     padding: 0;
 }
 
+
 img {
     margin: 5px;
+}
+
+body{
+    background-color:black !important;;
 }
 
 /* começo do menu */
@@ -104,6 +109,45 @@ img {
     border:none;
     height:42px;
      width:950px; 
-    
-    
   }
+
+  /* Promoção */
+  .promocao{
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* carrossel */
+  
+  .carrossel{
+    
+    background-color: white;
+    border: solid 1px red;
+    display: flex;
+    position: absolute;
+    top: 135%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+  }
+
+  .img1{
+    border-left: 1px solid red;
+    width:200px ;
+    height: 200px;
+
+  }
+
+  .teste{
+    color: black;
+    display: flex !important;
+  }
+
+  .txtdolado{
+    margin: auto !important;;
+  }
+
+ 
+
