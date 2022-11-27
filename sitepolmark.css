@@ -77,6 +77,10 @@ body {
     margin: auto;
     padding: 20px;
     border-left: solid 1px gray;
+    font-size: 32px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Chewy', cursiv !important;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .inicio1 {
@@ -151,7 +155,7 @@ body {
     margin: auto !important;
     font-size: 25px;
     font-family: 'Anton', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Chewy', cursiv !important;
 }
 
 .carrossel2 {
