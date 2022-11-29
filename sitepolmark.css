@@ -9,7 +9,7 @@ img {
 }
 
 body {
-    background-color: rgb(179, 179, 179) !important;
+    background-color: rgb(234, 222, 115) !important;
 }
 
 /* começo do menu */
@@ -43,6 +43,9 @@ a {
     display: flex;
     list-style: none;
     gap: 0.5rem;
+    font-size: 1rem;
+    
+
   }
   ul#menu {
     margin-top: 1.7vmax;
@@ -70,6 +73,10 @@ a {
       height: 0px;
       visibility: hidden;
       overflow-y: hidden;
+      
+      
+  
+  
     }
     #nav.active #menu {
       height: calc(100vh - 70px);
@@ -174,6 +181,9 @@ a {
     flex-wrap: wrap;
     font-weight: bold;
     margin-right: 1rem;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Chewy', cursiv !important;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .img2 {
@@ -272,4 +282,7 @@ input#txtBusca {
     align-items: center;
     justify-content: center;
     margin-top: 10px;
+}
+.voltar{
+  color: black;
 }

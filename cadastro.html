@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="sitepolmark.css">
     <link rel="shortcut icon" href="imagens/Logo0.png" type="image/x-icon">
-    <title>cadastro cliente</title>
+    <title>Cadastro</title>
 </head>
 <style>
     body {
@@ -71,23 +71,34 @@
         padding-left: 450px;
         font-family: 'Franklin Gothic Medium';
     }
+    #menu{
+        font-family: 'Anton', sans-serif;
+        font-family: 'Chewy', cursiv !important;
+        font-family: 'Open Sans', sans-serif;
+    }
 
 </style>
 <body>
-    <div>
-        <div class="emblema">
-            <div class="logo">
-                <img align="left" src="imagens/Logo0.png" left="5px" width="100px" height="100px">
-            </div>
-    
-            <div class="btns">
-                <a href="atendimento.html"><button type="button" class="efeito1">Central de atendimento</button></a>
-    
-            </div> 
+    <header id="header">
+        <div class="logo">
+            <img src="imagens/Logo0.png" left="5px">
         </div>
-        <div class="voltar">
-            <a href="index.html"> Voltar </a>
-        </div>
+                <nav>
+                <nav id="nav">
+                    <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                      <span id="hamburger"></span>
+                    </button>
+                <ul id="menu" role="menu">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>                    
+                    <li><a href="atendimento.html">Central de atendimento</a></li>
+                    <li><a href="/">Nossas Lojas</a></li>
+                  </ul>
+                </nav>
+    </header>
+
+    <div class="voltar">
+        <a style="color:rgb(0, 0, 0)" href="index.html"> Voltar </a>
     </div>
 
     <h2 style="color:rgba(27, 27, 216, 0.985);"> Cadastro </h2>
@@ -166,7 +177,8 @@
     
     <p></p>
     <p></p>
-
+    
+    <script src="script.js"></script>
 </body>
 </html>
        
