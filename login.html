@@ -25,20 +25,34 @@
     h2{
         padding-top: 50px;
         padding-left: 200px;
-        font-family: Impact;
     }
     p{
         padding-top: 50px;
         text-align: center; 
-        font-size: 20px;
+        font-size: 25px;
     }
     .continuar{
     text-align: center;
     margin-top: 15px;
 
     }
-    .caixa1{
-    text-align: center;
+    .caixas {
+    margin-inline-start: 450px;
+    margin-inline-end: 450px;
+    padding-block-start: 100px;
+    padding-inline-start: 50px;
+    padding-top: 10px;
+    border-width: 2px;
+    border-style: groove;
+    border-color: rgb(90, 100, 236);
+    border-image: initial;
+    }
+
+    * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Muli, Arial, sans-serif;
     }
     
 
@@ -53,8 +67,7 @@
         </div>
 
         <div class="btns">
-            <button type="button" class="efeito1 ">Meus pedidos</button>
-            <button type="button" class="efeito1">Central de atendimento</button>
+           <a href="atendimento.html"> <button type="button" class="efeito1">Central de atendimento</button></a>
 
 		</div> 
     </div>
@@ -64,18 +77,23 @@
 </div>
 
 <h2 style="color:rgba(27, 27, 216, 0.985);"> Indentificação </h2>
-<p style="color:gray"> Para continuar, preencha com o seu CPF ou CNPJ </p>
+<p style="color:rgb(0, 0, 0)"> Para continuar, preencha com o seu CPF ou CNPJ </p><br><br>
 
-        <div class="btns">
+    
 
-            <div class="caixa1">
-                <input style="font-size: larger;" data-val="true" placeholder="Insira o CPF ou CNPJ aqui" type="text" value="" maxlength="18" autocomplete="off">
-            </div>
+     <fieldset  class="caixas">
+
+            <label style="color: black ;" for="PCPF">CPF ou CNPJ</label><br>
+            <div class="caixa">
+            <input type="text" value="" id="PCPF" placeholder="Insira aqui seu documento"  name="PCPF">
+            </div><br>
+
+     </fieldset>
     
             <div class="continuar">
                 <button type="button" class="continuar"><a href="index.html">Continuar</a></button>
             </div>
-        </div>
+     
 
 </body>
 </html>    

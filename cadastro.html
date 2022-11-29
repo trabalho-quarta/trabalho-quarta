@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="sitepolmark.css">
     <link rel="shortcut icon" href="imagens/Logo0.png" type="image/x-icon">
-    <title>cadastro</title>
+    <title>cadastro cliente</title>
 </head>
 <style>
     body {
@@ -17,40 +17,59 @@
         background-size: cover;
         -webkit-font-smoothing: antialiased;
     }
+
     .voltar{
-        padding-top: 30px;
+        padding-top: 40px;
         padding-left: 180px;
     }
+
     h2{
         padding-top: 40px;
         padding-left: 180px;
         font-family:Arial;
         font-size: 50px;
-    }   
+    } 
+
     p{
         padding-top: 50px;
         text-align: center; 
         font-size: 30px;
     }
+
     * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: Muli, Arial, sans-serif;
-}
-    fieldset {
-    display: block;
-    margin-inline-start: 2px;
-    margin-inline-end: 2px;
-    padding-block-start: 0.35em;
-    padding-inline-start: 0.75em;
-    padding-inline-end: 0.75em;
-    padding-block-end: 0.625em;
-    min-inline-size: min-content;
+    }
+
+    .caixas {
+    margin-inline-start: 450px;
+    margin-inline-end: 450px;
+    padding-block-start: 100px;
+    padding-inline-start: 50px;
+    padding-top: 10px;
     border-width: 2px;
     border-style: groove;
-    border-color: rgb(192, 192, 192);
+    border-color: rgb(90, 100, 236);
     border-image: initial;
+    }
+
+    .continuar{
+    text-align: center;
+    margin-top: 15px;
+    }
+
+    .legenda-abaixo{
+        text-align: left;
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+
+    h3{
+        font-size: 15px;
+        padding-left: 450px;
+        font-family: 'Franklin Gothic Medium';
     }
 
 </style>
@@ -62,8 +81,7 @@
             </div>
     
             <div class="btns">
-                <button type="button" class="efeito1 ">Meus pedidos</button>
-                <button type="button" class="efeito1">Central de atendimento</button>
+                <a href="atendimento.html"><button type="button" class="efeito1">Central de atendimento</button></a>
     
             </div> 
         </div>
@@ -73,40 +91,82 @@
     </div>
 
     <h2 style="color:rgba(27, 27, 216, 0.985);"> Cadastro </h2>
-    <p style="color:rgb(92, 92, 92)"> Faça seu cadastro de forma rápida e fácil </p>
+    <p style="color:rgb(0, 0, 0)"> Faça seu cadastro de forma rápida e fácil ! </p><br><br>
+    <h3 style="color:rgba(61, 61, 235, 0.985);"> Dados pessoais </h3><br>
 
-    <fieldset data-testid="input-name" class="sc-fzXfOz cmGGHW">
-        <label for="input-name" class="sc-fzXfOw hcisTU">Nome completo</label>
+    <form  class="caixas">
+        <label style="color:rgb(0, 0, 0)" for="Pname">Nome completo</label><br>
+        <div class="caix">
+        <input type="text" value="" id="Pnome" placeholder="Nome e Sobrenome"  name="Pnome">
+    </div>
+    <div style="color:rgb(0, 0, 0)" class="legenda-abaixo">Ex: Nome e Sobrenome
+    </div>
+    </form>
+
+    <p></p>
+
+    <form class="caixas">
+        <label style="color:rgb(0, 0, 0)" for="genero">Gênero</label><br><br>
+    <input type="Radio" name="genero"
+        id="masculino">
+        <label style="color:rgb(0, 0, 0)" for="masculino">Masculino</label><br><br>
+        <input type="Radio" name="genero"
+        id="feminino">
+        <label style="color:rgb(0, 0, 0)" for="feminino">Feminino</label><br><br>
+        <input type="Radio" name="genero"
+        id="Outros">
+        <label style="color:rgb(0, 0, 0)" for="genero">Outros</label><br><br>
+
+    </form>
+    <p></p>
+
+    <form class="caixas">
+        <label style="color:rgb(0, 0, 0)" for="Cfone">Celular com ddd</label>
+            <div class="caix">
+            <input type="telefone" required="" id="Cfone" maxlength="11" placeholder="Celular" name="Cfone" value="">
+            </div>
+        <div style="color:rgb(0, 0, 0)" class="legenda-abaixo">Ex: (00) 00000-0000</div>
+    </form>
+
+    <p></p>
+
+    <form class="caixas">
+            <label style="color:rgb(0, 0, 0)" for="DATA">Data de nascimento </label>
+            <div class="sc-fzXfOX cULQXG">
+            <input type="tel" required="" id="DATA" maxlength="8" placeholder="dia/mês/ano" name="DATA" value="" >
+            </div>
+        <div style="color:rgb(0, 0, 0)" class="legenda-abaixo">Ex: dd/mm/aaaa</div>
+    </form><br>
+
+    <h3 style="color:rgba(61, 61, 235, 0.985);"> Dados de acesso </h3><br>
+
+    <form class="caixas">
+        <label style="color:rgb(0, 0, 0)" for="login">Email</label>
         <div class="sc-fzXfOX cULQXG">
-            <input type="text" required="" value="" id="input-name" placeholder="Nome e Sobrenome"  name="input-name" class="sc-fzXfPa dyoQjq">
+        <input type="tel" required="" id="login" placeholder="Email" name="login" value="" >
         </div>
-            <p class="sc-fzXfOv ARvLx">Ex: Nome e Sobrenome</p>
-    </fieldset>
+        <div style="color:rgb(0, 0, 0)" class="legenda-abaixo">Ex: seuemail@dominio.com.br</div>
+    </form>
 
-    <fieldset data-testid="input-name" class="sc-fzXfOz cmGGHW">
-        <label for="input-name" class="sc-fzXfOw hcisTU">Nome completo</label>
-            <div class="sc-fzXfOX cULQXG">
-                <input type="text" required="" value="" id="input-name"  placeholder="Nome completo" name="input-name" class="sc-fzXfPa dyoQjq"></div>
-        <p class="sc-fzXfOv ARvLx">Ex: Nome e Sobrenome</p>
-    </fieldset>
-     
-    <fieldset data-testid="input-phone" class="sc-fzXfOz ksgeBP">
-        <label for="input-phone" class="sc-fzXfOw hcisTU">Celular com ddd</label>
-            <div class="sc-fzXfOX cULQXG">
-            <input type="tel" required="" id="input-phone"  placeholder="Celular" name="input-phone" value="" class="sc-fzXfPa dyoQjq">
-            </div>
-        <p class="sc-fzXfOv ARvLx">Ex: (00) 00000-0000</p>
-    </fieldset>
-                
-    <fieldset data-testid="input-date" class="sc-fzXfOz ksgeBP">
-            <label for="input-date" class="sc-fzXfOw hcisTU">Data de nascimento com dia/mês/ano</label>
-            <div class="sc-fzXfOX cULQXG">
-            <input type="tel" required="" id="input-date" placeholder="data de nascimento" name="input-date" value="" class="sc-fzXfPa dyoQjq">
-            </div>
-        <p class="sc-fzXfOv ARvLx">Ex: dd/mm/aaaa</p>
-    </fieldset>
+    <p></p>
+
+    <form class="caixas">
+    <label style="color:rgb(0, 0, 0)" for="Senha-login">Senha</label>
+    <div class="sc-fzXfOX cULQXG">
+    <input type="tel" required="" id="Senha-login" placeholder="Senha" name="Senha-login" value="">
+    </div>
+    <div style="color:rgb(0, 0, 0)" class="legenda-abaixo">Ex: mínimo de 6 caracteres com letras e números</div>
+    </form>
+
+        </div>
+        <div class="continuar">
+            <button type="button" class="continuar"><a href="index.html">Finalizar cadastro</a></button>
         </div>
     </div>
+    
+    <p></p>
+    <p></p>
+
 </body>
 </html>
        
